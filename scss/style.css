@@ -1,0 +1,9 @@
+body div {
+  font-size: 18px;
+  background-color: lightcoral;
+}
+
+body div:hover {
+  background-color: lightgreen;
+}
+/*# sourceMappingURL=style.css.map */
