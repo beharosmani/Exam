@@ -1,9 +1,288 @@
-body div {
-  font-size: 18px;
-  background-color: lightcoral;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-body div:hover {
-  background-color: lightgreen;
+body {
+  line-height: 1;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #4F5665;
+}
+
+.full-block {
+  width: 100%;
+  float: left;
+}
+
+.main-header {
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  position: relative;
+  background: url("/assets/banner.png") no-repeat;
+  background-size: cover;
+  height: 820px;
+}
+
+.container {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.main-header__text {
+  position: absolute;
+  top: 264px;
+  left: 558px;
+}
+
+.main-header__text h1 {
+  position: absolute;
+  text-align: center;
+  left: 128px;
+  top: 13px;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 26px;
+  /* identical to box height, or 54% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.main-header__text p {
+  text-align: center;
+  position: absolute;
+  left: 128px;
+  top: 50px;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  /* identical to box height, or 118% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 6.82px;
+  color: #FFFFFF;
+}
+
+.search {
+  width: 653px;
+  height: 63px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  top: 124px;
+}
+
+.search .searchTerm {
+  border: 1px solid #FFFFFF;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+  width: 503px;
+  height: 63px;
+  padding-left: 113px;
+  background: #FFFFFF;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  /* identical to box height, or 186% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 2.8px;
+  color: #999999;
+}
+
+.search .searchButton {
+  background: #5474FD;
+  border: 2px solid #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  background-image: url("/assets/search.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-right: 40px;
+  display: inline-block;
+}
+
+.search .searchButton:focus {
+  background: red;
+}
+
+.scroll {
+  position: absolute;
+  left: 805px;
+  top: 558px;
+  display: block;
+  width: 108px;
+  height: 46px;
+}
+
+.scroll p {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  /* identical to box height, or 186% */
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  letter-spacing: 2.8px;
+  color: #FFFFFF;
+  background: url("/assets/down-arrow.svg") no-repeat center;
+  background-position-y: 18px;
+}
+
+.hero {
+  float: left;
+  width: 100%;
+  background: #5474FD;
+  padding-top: 32px;
+  padding-bottom: 31px;
+  padding-left: 331px;
+  padding-right: 331px;
+  margin-top: -5px;
+}
+
+.hero .flex-container {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-nav ul li {
+  list-style: none;
+  margin-right: 12px;
+}
+
+.main-nav li:last-child {
+  margin-right: 0px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  font-family: "Aleo", "sans-serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  /* identical to box height, or 186% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.main-nav a:hover {
+  color: #FF7F57;
+}
+
+.main-nav a.li1 {
+  width: 126px;
+}
+
+.main-nav a.li2 {
+  width: 128px;
+}
+
+.main-nav a.li3 {
+  width: 148px;
+}
+
+.main-nav a.li4 {
+  width: 117px;
+}
+
+.main-nav ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.logo {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 26px;
+  /* identical to box height, or 108% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */
